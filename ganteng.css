@@ -1,0 +1,275 @@
+:root {
+  --hitam1: #0f0f1c;
+  --hitam2: #1c1c2c;
+  --text-nyala: #f5f5f5;
+  --text-redup: #d4d4d4;
+  --gold: #FFD700;
+  --gold-dark: #B8860B;
+  --border-color: #3a3a4f;
+  --shadow: #101010;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: var(--hitam1);
+    color: var(--text-nyala);
+}
+
+.kepala{
+    /* border: var(--text-nyala);
+    border-style: solid; */
+    display: flex;
+    background: url('foto/159Z_2107.w026.n002.628B.p1.628.jpg');
+    background-position: center;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+    height: 100vh;
+}
+
+.navbar{
+    /* border: var(--text-nyala);
+    border-style: solid; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+
+}
+
+.kelLink{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.kelLink a{
+    color: var(--text-nyala);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.kelLink a:hover{
+    color: var(--gold);
+}
+/* batas navbar */
+
+/* contentKepala */
+.kontenKepala{
+    margin-top: auto;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.nama{
+    color: var(--gold);
+}
+
+/* kontent 2 */
+.kontainerProfil{
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.title{
+    /* posisition berguna sebelum mengatur berbagai margin */
+    position: relative;
+    margin-top: 1rem;
+    text-align: center;
+    color: var(--gold);
+}
+
+.title h2{
+    letter-spacing: 1px;
+}
+
+/* menambah konten jika title sudah terisi */
+.title::after{
+    /* wajib ada tag */
+    content: '';
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: var(--gold);
+    margin: 8px auto 0
+}
+
+title::before{
+    content: '';
+    display: block;
+    width: 100px;
+    height: 2px;
+    background-color: var(--hitam2);
+    margin: 8px auto 0;
+}
+.content1{
+    height: auto;
+    /* border: var(--text-nyala);
+    border-style: solid; */
+    /* biar gak bocor */
+    overflow: hidden;
+    position: relative;
+    
+}
+
+.gambar{
+    height: 45vh;
+    width: 300px;
+    border-radius: 20px;
+    margin-right: 50px;
+}
+
+
+.content2{
+    /* border: var(--text-nyala);
+    border-style: solid; */
+    height: 45vh;
+    padding: 2rem;
+    
+}
+
+.identitas{
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.identitas li{
+    margin-top: 10px;
+}
+
+.profil{
+    height: auto;
+    /* border: var(--text-nyala);
+    border-style: solid; */
+    justify-content: center;
+    align-items: center;
+}
+
+.tombolCV{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8rem;
+    padding: 10px;
+}
+
+.tombolCV{
+    border: var(--gold);
+    border-style: solid;
+    border-radius: 25px;
+    background: var(--gold);
+    text-decoration: none;
+    color: var(--hitam1);
+    font-size: small;
+}
+
+.servisSection{
+    /* border: var(--text-nyala);
+    border-style: solid; */
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.kontainerServis{
+    /* border: var(--text-nyala);
+    border-style: solid; */
+    display: flex;
+    padding: 2rem;
+    gap: 1rem;
+    justify-content: center;
+    width: 50%;
+    margin-bottom: 1rem;
+}
+
+.servis{
+    /* border: var(--text-nyala);
+    border-style: solid; */
+    padding: 1rem;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 10rem;
+}
+
+.gambar2{
+    width: auto;
+    height: auto;
+    /* border: var(--text-nyala); */
+}
+
+.logo{
+    height: 5rem;
+}
+
+.akhir{
+    /* border: var(--text-nyala);
+    border-style: solid; */
+    height: auto;
+    padding: 2rem;
+    justify-content: center;
+}
+
+.kontainerAkhir{
+    display: flex;
+    gap: 1rem;
+}
+
+.akhir1{
+    /* border: var(--text-nyala);
+    border-style: solid; */
+    width: 50%;
+    padding: 1rem;
+}
+
+.akhir2{
+    /* border: var(--text-nyala);
+    border-style: solid; */
+    width: 50%;
+    padding: 1rem;
+}
+
+.skill{
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.skill span{
+    display: block;
+    font-weight: bold;
+}
+
+.progress-bar{
+  background-color: var(--hitam2);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--shadow)
+}
+
+.progress{
+    background-color: var(--gold);
+    height: 24px;
+    line-height: 24px;
+    color: var(--hitam1);
+    font-weight: bold;
+    text-align: right;
+    padding-right: 10px;
+    border-radius: 8px 0 0 8px;
+    transition: width 0.6s ease;
+}
