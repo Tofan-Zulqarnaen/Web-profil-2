@@ -245,6 +245,12 @@ title::before{
     padding: 1rem;
 }
 
+.sosial_media_text{
+    margin-top: 9px;
+    text-decoration: none;
+    color: white;
+}
+
 .skill{
     margin: 20px auto;
     max-width: 600px;
