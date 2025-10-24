@@ -1,0 +1,274 @@
+:root {
+  --hitam1: #0f0f1c;
+  --hitam2: #1c1c2c;
+  --text-nyala: #f5f5f5;
+  --text-redup: #d4d4d4;
+  --gold: #FFD700;
+  --gold-dark: #B8860B;
+  --border-color: #3a3a4f;
+  --shadow: #101010;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: var(--hitam1);
+    color: var(--text-nyala);
+    width: 100%;
+    height: 100%;
+}
+
+/* awal navbar */
+.navbar{
+    /* border: var(--gold);
+    border-style: solid; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+}
+
+.text-navbar{
+    color: var(--text-nyala);
+    text-decoration: none;
+    transition: color 0.3s;
+    cursor: default;
+    color: var(--gold);
+    font-weight: bold;
+}
+
+.text-navbar:hover{
+    color: var(--gold);
+}
+/* batas navbar */
+
+/* kontent 2 */
+.profil{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    /* border: var(--text-nyala);
+    border-style: solid; */
+}
+
+.kontainerProfil{
+    /* border: var(--text-nyala);
+    border-style: solid; */
+    width: auto;
+    height: 100%;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.title{
+    /* posisition berguna sebelum mengatur berbagai margin */
+    position: relative;
+    margin-top: 1rem;
+    text-align: center;
+    color: var(--gold);
+}
+
+.title h2{
+    letter-spacing: 1px;
+}
+
+/* menambah konten jika title sudah terisi */
+.title::after{
+    /* wajib ada tag */
+    content: '';
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: var(--gold);
+    margin: 8px auto 0
+}
+
+title::before{
+    content: '';
+    display: block;
+    width: 100px;
+    height: 2px;
+    background-color: var(--hitam2);
+    margin: 8px auto 0;
+}
+.content1{
+    /* border: var(--text-nyala);
+    border-style: solid; */
+    align-items: center;
+
+    height: 25rem;
+    display: flex;
+    justify-content: center;
+}
+
+.gambar{
+    max-width: 100%;
+    height:75%;
+    border-radius: 20px;
+
+
+}
+
+
+.content2{
+    /* border: var(--text-nyala);
+    border-style: solid; */
+    height: 25rem;
+    padding: 0.5rem;
+    width: 50%;
+    word-wrap: break-word;
+}
+
+.identitas{
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.identitas li{
+    margin-top: 10px;
+}
+
+.profil{
+    height: auto;
+    /* border: var(--text-nyala);
+    border-style: solid; */
+    justify-content: center;
+    align-items: center;
+}
+
+.kontainerBTN{
+    display: flex;
+    justify-content: center;
+}
+
+.tombolCV{
+    border: var(--gold);
+    border-style: solid;
+    border-radius: 25px;
+    background: var(--gold);
+    text-decoration: none;
+    color: var(--hitam1);
+    font-size: small;
+    text-align: center;
+    width: 50%;
+}
+
+.servisSection{
+    /* border: var(--text-nyala);
+    border-style: solid; */
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.kontainerServis{
+    /* border: var(--text-nyala);
+    border-style: solid; */
+    display: flex;
+    padding: 0.5rem;
+    gap: 0.5rem;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.servis{
+    /* border: var(--text-nyala);
+    border-style: solid;
+    border-radius: 15%; */
+    padding: 1rem;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 20%;
+    word-wrap: break-word;
+}
+
+.gambar2{
+    width: auto;
+    height: auto;
+    /* border: var(--text-nyala); */
+}
+
+.logo{
+    height: 3rem;
+}
+
+.akhir{
+    /* border: var(--text-nyala);
+    border-style: solid; */
+    height: auto;
+    padding: 0.5rem;
+    justify-content: center;
+    width: 100%;
+}
+
+.kontainerAkhir{
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    /* border: var(--text-nyala);
+    border-style: solid; */
+}
+
+.akhir1{
+    /* border: var(--text-nyala);
+    border-style: solid; */
+    width: 50%;
+    padding: 1rem;
+}
+
+.akhir2{
+    /* border: var(--text-nyala);
+    border-style: solid; */
+    width: 50%;
+    padding: 1rem;
+}
+
+.sosial_media_text{
+    margin-top: 9px;
+    text-decoration: none;
+    color: white;
+}
+
+.skill{
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.skill span{
+    display: block;
+    font-weight: bold;
+}
+
+.progress-bar{
+  background-color: var(--hitam2);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--shadow)
+}
+
+.progress{
+    background-color: var(--gold);
+    height: 24px;
+    line-height: 24px;
+    color: var(--hitam1);
+    font-weight: bold;
+    text-align: right;
+    padding-right: 10px;
+    border-radius: 8px 0 0 8px;
+    transition: width 0.6s ease;
+}
