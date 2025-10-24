@@ -1,0 +1,272 @@
+:root {
+  --hitam1: #0f0f1c;
+  --hitam2: #1c1c2c;
+  --text-nyala: #f5f5f5;
+  --text-redup: #d4d4d4;
+  --gold: #FFD700;
+  --gold-dark: #B8860B;
+  --border-color: #3a3a4f;
+  --shadow: #101010;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: var(--hitam1);
+  color: var(--text-nyala);
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  width: 100%;
+  flex-wrap: wrap; /* biar teks turun kalau sempit */
+  text-align: center;
+}
+
+.text-navbar {
+  color: var(--gold);
+  font-weight: bold;
+  margin: 0.3rem 0;
+  flex: 1 1 100%;
+}
+
+/* ===== TITLE ===== */
+.title {
+  position: relative;
+  margin-top: 1.5rem;
+  text-align: center;
+  color: var(--gold);
+}
+
+.title h2 {
+  letter-spacing: 1px;
+}
+
+.title::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 2px;
+  background-color: var(--gold);
+  margin: 8px auto 0;
+}
+
+/* ===== PROFIL SECTION ===== */
+.profil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.kontainerProfil {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.content1,
+.content2 {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.gambar {
+  max-width: 90%;
+  border-radius: 20px;
+}
+
+.content2 {
+  padding: 1rem;
+}
+
+.identitas {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  display: inline-block;
+}
+
+.identitas li {
+  margin-top: 10px;
+}
+
+.kontainerBTN {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.tombolCV {
+  border: 2px solid var(--gold);
+  border-radius: 25px;
+  background: var(--gold);
+  color: var(--hitam1);
+  font-size: small;
+  text-align: center;
+  width: 60%;
+  padding: 8px 0;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.tombolCV:hover {
+  background: var(--gold-dark);
+  color: var(--text-nyala);
+}
+
+/* ===== SOSIAL MEDIA ===== */
+.servisSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+}
+
+.kontainerServis {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.servis {
+  width: 150px;
+  text-align: center;
+  padding: 1rem;
+}
+
+.logo {
+  height: 3rem;
+}
+
+.sosial_media_text {
+  margin-top: 9px;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+}
+
+/* ===== SKILL SECTION ===== */
+.akhir {
+  padding: 1rem;
+  width: 100%;
+}
+
+.kontainerAkhir {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.akhir1, .akhir2 {
+  flex: 1 1 300px;
+  padding: 1rem;
+}
+
+.skill {
+  margin: 20px auto;
+  max-width: 400px;
+}
+
+.skill span {
+  display: block;
+  font-weight: bold;
+}
+
+.progress-bar {
+  background-color: var(--hitam2);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 4px;
+}
+
+.progress {
+  background-color: var(--gold);
+  height: 24px;
+  line-height: 24px;
+  color: var(--hitam1);
+  font-weight: bold;
+  text-align: right;
+  padding-right: 10px;
+  border-radius: 8px 0 0 8px;
+  transition: width 0.6s ease;
+}
+
+/* ===== RESPONSIVE AREA ===== */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-navbar {
+    flex: 1 1 100%;
+  }
+
+  .kontainerProfil {
+    flex-direction: column;
+  }
+
+  .content1, .content2 {
+    width: 100%;
+  }
+
+  .servis {
+    width: 40%;
+  }
+
+  .akhir1, .akhir2 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .skill {
+    max-width: 100%;
+  }
+
+  .tombolCV {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .servis {
+    width: 80%;
+  }
+
+  .text-navbar {
+    font-size: 0.9rem;
+  }
+
+  .title h2 {
+    font-size: 1.2rem;
+  }
+
+  .progress {
+    font-size: 0.8rem;
+  }
+}
